@@ -1,0 +1,13 @@
+{
+  "name": "zakia-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build:css": "npx tailwindcss -i ./app/static/css/input.css -o ./app/static/css/output.css --minify",
+    "dev:css": "npx tailwindcss -i ./app/static/css/input.css -o ./app/static/css/output.css --watch"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.10",
+    "tailwindcss": "^3.4.17"
+  }
+}

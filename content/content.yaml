@@ -1,0 +1,210 @@
+site:
+  name: Zakia Sultana
+  tagline: Migration, mobility, consular administration, intercultural relations
+  location: Germany & Norway
+  hero_headline: Migration & Consular Administration | EMMIR (Erasmus Mundus)
+  hero_summary: Migration and consular administration professional with over three years of embassy experience across visa workflows, stakeholder communication, confidential documentation, and data-centered operations.
+  cv_file: /static/files/zakia-sultana-cv.pdf
+  show_phone: false
+
+navigation:
+  - label: Home
+    anchor: home
+  - label: About
+    anchor: about
+  - label: Work
+    anchor: work
+  - label: Services
+    anchor: services
+  - label: Photography
+    anchor: photography
+  - label: Contact
+    anchor: contact
+
+about_summary: >-
+  Migration & consular administration professional with more than 3 years' experience in embassy environments,
+  supporting visa case processing, interviews, stakeholder communication, and confidential document handling.
+  Skilled in database administration, trend research, and high-volume client-facing coordination. Awarded the
+  Erasmus Mundus Scholarship and pursuing a joint master's degree funded by the European Union.
+
+about:
+  my_focus:
+    - title: Visa Operations Quality
+      description: Structured case verification, profile assessment, and workflow consistency in high-volume visa environments.
+    - title: Stakeholder Communication
+      description: Clear liaison support across applicants, consular officers, and external institutions through email and phone.
+    - title: Data Integrity and Research
+      description: Reliable record maintenance and trend monitoring to improve decision readiness and operational clarity.
+  how_i_work:
+    - title: Listen and Clarify
+      description: Identify decision criteria early and define process expectations before execution starts.
+    - title: Structure and Prioritize
+      description: Break work into auditable steps with clear handoffs for confidential and time-sensitive operations.
+    - title: Communicate Proactively
+      description: Keep stakeholders informed with concise updates and transparent escalation when needed.
+    - title: Improve Continuously
+      description: Use pattern analysis and feedback loops to refine service quality and reduce avoidable delays.
+
+work_experience:
+  - title: Migration Assistant
+    organization: Embassy of Sweden
+    period: Jan 2025 - Aug 2025
+    bullets:
+      - Visa application verification and assessment; preparing structured feedback on applicant profiles
+      - Visa interview coordination and facilitation across multiple categories (student, family reunification, others)
+      - Confidential handling of passports, residence permits, and visas; oversight of printing and distribution workflows
+      - Database administration: maintaining visa application records, ensuring data integrity, and supporting research
+      - Stakeholder communication: primary liaison via email and phone
+      - Trend monitoring and desk research on visa application patterns by region
+      - Archiving of visa applications in line with confidentiality requirements
+  - title: Administrative Secretary
+    organization: Embassy of the Arab Republic of Egypt
+    period: Nov 2022 - Dec 2024
+    bullets:
+      - Document verification and justification support for consular and visa applications
+      - Drafting diplomatic letters to the Ministry of Foreign Affairs and handling official communication
+      - Managing consular emails and queries per embassy procedures
+      - Interpretation and liaison support between applicants and consular office
+      - Administrative coordination in a regulated environment with attention to accuracy and confidentiality
+      - Support for Ambassador's office scheduling and sensitive correspondence
+
+education:
+  - program: EMMIR (Erasmus Mundus Joint Master)
+    institution: Germany & Norway
+    period: 2025-Current
+  - program: BSS in International Relations
+    institution: Academic Program
+    period: 2015-2018
+
+leadership:
+  - President, Students Against Violence Everywhere (SAVE Youth)
+  - Youth Engagement & Support Member, Transparency International Bangladesh (YES Group)
+
+skills:
+  - Microsoft Excel
+  - Microsoft Office
+  - Organizational planning
+  - Decision-making
+  - Reliability
+  - Teamwork
+
+languages:
+  - Bangla (native)
+  - English (C1-C2)
+
+selected_work:
+  - slug: embassy-sweden-visa-operations
+    title: Visa Operations Coordination
+    category: Migration Administration
+    year: 2025
+    role: Migration Assistant
+    context: Embassy of Sweden visa unit operations.
+    summary: Coordinated interview scheduling, screening support, and document lifecycle controls for multi-category visa applicants.
+    highlights:
+      - Standardized pre-assessment notes that improved clarity for interview preparation.
+      - Coordinated interview flow for student, family reunification, and additional visa categories.
+      - Maintained confidentiality across passport and residence-permit distribution workflows.
+    outcome: Delivered reliable and high-volume application support while maintaining confidentiality and procedural accuracy.
+
+  - slug: diplomatic-correspondence-streamline
+    title: Diplomatic Correspondence Streamline
+    category: Consular Administration
+    year: 2024
+    role: Administrative Secretary
+    context: Embassy of the Arab Republic of Egypt administrative office.
+    summary: Improved administrative consistency for diplomatic letter drafting and official communication routing.
+    highlights:
+      - Created repeatable drafting patterns aligned with ministry communication standards.
+      - Reduced communication bottlenecks through more structured inbox triage.
+      - Supported confidential scheduling and correspondence for senior office activities.
+    outcome: Increased responsiveness of consular communication while preserving procedural rigor.
+
+  - slug: visa-trend-monitoring
+    title: Visa Trend Monitoring Desk
+    category: Research and Insights
+    year: 2025
+    role: Migration Assistant
+    context: Regional visa demand and pattern tracking for operational planning.
+    summary: Built a desk-research routine to track application trends by region and flag recurring documentation gaps.
+    highlights:
+      - Organized weekly pattern snapshots for internal decision support.
+      - Documented recurring profile characteristics to improve preparation guidance.
+      - Linked trend insights to practical workflow adjustments for case handling.
+    outcome: Enabled more informed planning through recurring, lightweight trend intelligence.
+
+  - slug: secure-archive-workflow
+    title: Secure Archive Workflow
+    category: Confidential Documentation
+    year: 2023
+    role: Administrative Secretary
+    context: Consular records retention and retrieval procedures.
+    summary: Structured application archiving steps to improve traceability without compromising confidentiality.
+    highlights:
+      - Organized archiving checkpoints for intake, review, and closure stages.
+      - Improved retrieval reliability for follow-up requests and audits.
+      - Reinforced confidentiality discipline in daily records handling.
+    outcome: Strengthened operational trust through cleaner records governance and retrieval consistency.
+
+services:
+  - title: Visa Case Processing Support
+    description: End-to-end administrative support for intake, verification, interview flow, and follow-up communications.
+  - title: Consular Documentation Management
+    description: Secure handling of sensitive records, controlled workflows, and archiving aligned with confidentiality requirements.
+  - title: Stakeholder Liaison Coordination
+    description: Professional communication management across applicants, offices, and institutional stakeholders.
+  - title: Mobility Trend and Operations Research
+    description: Data-informed desk research to identify patterns and support operational planning decisions.
+
+affiliations:
+  - name: Students Against Violence Everywhere (SAVE Youth)
+    role: President
+    description: Led student engagement programs focused on social responsibility, inclusion, and youth leadership.
+  - name: Transparency International Bangladesh (YES Group)
+    role: Youth Engagement & Support Member
+    description: Contributed to awareness initiatives and youth-driven integrity and transparency activities.
+  - name: Erasmus Mundus EMMIR Community
+    role: Scholar
+    description: Participating in a joint European Union-funded academic network centered on migration and intercultural relations.
+  - name: Embassy Operations Networks
+    role: Professional Contributor
+    description: Practical collaboration across consular and migration service teams in regulated diplomatic environments.
+
+photography:
+  intro: A curated local gallery from static assets, designed as the safe default mode with no third-party API requirement.
+  gallery:
+    - src: /static/photos/photo-1.svg
+      alt: Documentation desk with organized files and stamps
+      caption: Workflow Precision
+    - src: /static/photos/photo-2.svg
+      alt: Administrative records board with timeline markers
+      caption: Case Tracking
+    - src: /static/photos/photo-3.svg
+      alt: Minimal office composition with notebook and passport cover
+      caption: Quiet Coordination
+    - src: /static/photos/photo-4.svg
+      alt: Abstract map lines representing mobility pathways
+      caption: Mobility Routes
+    - src: /static/photos/photo-5.svg
+      alt: Archival shelf labels and registry cards
+      caption: Secure Archives
+    - src: /static/photos/photo-6.svg
+      alt: Professional workspace with communication tools
+      caption: Stakeholder Communication
+
+instagram:
+  latest_enabled: true
+  max_items: 4
+  embeds:
+    - title: Official Embed Example 1
+      html: >-
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/Cx9m9gLNE9s/"
+        data-instgrm-version="14" style="background:#FFF;border:0;border-radius:12px;box-shadow:none;margin:0;max-width:540px;min-width:280px;padding:0;width:100%;"></blockquote>
+    - title: Official Embed Example 2
+      html: >-
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/Ct_Ca9dP8rl/"
+        data-instgrm-version="14" style="background:#FFF;border:0;border-radius:12px;box-shadow:none;margin:0;max-width:540px;min-width:280px;padding:0;width:100%;"></blockquote>
+
+contact:
+  email: zakiair817@gmail.com
+  linkedin: https://www.linkedin.com/in/zakia-sultana-66b610130
+  phone: "+00 0000 000000"

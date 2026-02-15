@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Mobility Routes</title>
+  <desc id="desc">Abstract map-like pathways representing migration and mobility routes.</desc>
+  <rect width="1200" height="900" fill="#eaf1fa"/>
+  <path d="M120 760 C 240 620, 280 450, 410 360 C 620 210, 790 390, 1080 170" stroke="#0b43a6" stroke-width="22" fill="none"/>
+  <path d="M100 520 C 220 430, 360 530, 510 460 C 700 360, 900 560, 1080 470" stroke="#4d83de" stroke-width="16" fill="none"/>
+  <path d="M180 250 C 380 140, 620 190, 820 100" stroke="#9abcec" stroke-width="12" fill="none"/>
+  <circle cx="410" cy="360" r="34" fill="#f1c37a"/>
+  <circle cx="700" cy="310" r="34" fill="#f1c37a"/>
+  <circle cx="980" cy="220" r="34" fill="#f1c37a"/>
+  <text x="120" y="840" font-size="42" font-family="Sora, Arial" fill="#1c3157">Mobility Pathways</text>
+</svg>

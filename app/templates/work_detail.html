@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="section-space">
+    <div class="container-shell space-y-8">
+        <a href="/#work" class="btn-secondary">Back to Selected Work</a>
+
+        <header class="max-w-4xl space-y-4" data-reveal>
+            <p class="kicker">Work Detail</p>
+            <h1 class="font-display text-4xl font-semibold leading-tight tracking-tight sm:text-5xl">{{ work_item.title }}</h1>
+            <p class="text-sm font-semibold uppercase tracking-wider text-ink-muted">
+                {{ work_item.category }} | {{ work_item.year }}
+            </p>
+            <p class="text-base leading-relaxed text-ink-muted">{{ work_item.summary }}</p>
+        </header>
+
+        <div class="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
+            <article class="panel" data-reveal>
+                <h2 class="font-display text-2xl font-semibold">Highlights</h2>
+                <ul class="mt-4 space-y-3 text-sm leading-relaxed text-ink-muted">
+                    {% for item in work_item.highlights %}
+                    <li class="list-disc ml-5">{{ item }}</li>
+                    {% endfor %}
+                </ul>
+            </article>
+
+            <article class="panel space-y-4" data-reveal>
+                <div>
+                    <h2 class="font-display text-2xl font-semibold">Outcome</h2>
+                    <p class="mt-3 text-sm leading-relaxed text-ink-muted">{{ work_item.outcome }}</p>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-ink">Role</h3>
+                    <p class="text-sm text-ink-muted">{{ work_item.role }}</p>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-ink">Context</h3>
+                    <p class="text-sm text-ink-muted">{{ work_item.context }}</p>
+                </div>
+                <a href="/#contact" class="btn-primary">Start a Conversation</a>
+            </article>
+        </div>
+    </div>
+</section>
+{% endblock %}

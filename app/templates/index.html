@@ -1,0 +1,357 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section id="home" class="section-space">
+    <div class="container-shell grid gap-8 lg:grid-cols-[1.3fr_0.7fr] lg:items-end">
+        <div class="space-y-8" data-reveal>
+            <p class="kicker">Portfolio</p>
+            <h1 class="font-display text-4xl font-semibold leading-tight tracking-tight sm:text-5xl lg:text-7xl">
+                {{ content.site.hero_headline }}
+            </h1>
+            <p class="max-w-2xl text-base leading-relaxed text-ink-muted sm:text-lg">
+                {{ content.site.hero_summary }}
+            </p>
+            <div class="flex flex-wrap gap-3">
+                <a href="/download/cv" class="btn-primary">Download CV</a>
+                <a href="/#contact" class="btn-secondary">Contact</a>
+            </div>
+        </div>
+        <aside class="panel space-y-6" data-reveal>
+            <div>
+                <p class="kicker">Professional Focus</p>
+                <p class="mt-2 text-base leading-relaxed text-ink-muted">{{ content.site.tagline }}</p>
+            </div>
+            <div class="grid gap-3 text-sm text-ink-muted">
+                <div class="rounded-xl border border-ink/10 bg-white px-4 py-3">
+                    <p class="font-semibold text-ink">Location</p>
+                    <p>{{ content.site.location }}</p>
+                </div>
+                <div class="rounded-xl border border-ink/10 bg-white px-4 py-3">
+                    <p class="font-semibold text-ink">Languages</p>
+                    <p>{{ content.languages | join(', ') }}</p>
+                </div>
+                <div class="rounded-xl border border-ink/10 bg-white px-4 py-3">
+                    <p class="font-semibold text-ink">Current Program</p>
+                    <p>{{ content.education[0].program }}</p>
+                </div>
+            </div>
+        </aside>
+    </div>
+</section>
+
+<section id="about" class="section-space border-t border-ink/10">
+    <div class="container-shell space-y-12">
+        <div class="max-w-4xl" data-reveal>
+            <p class="kicker">About</p>
+            <h2 class="section-title">Migration and consular operations with precision and empathy.</h2>
+            <p class="mt-5 text-base leading-relaxed text-ink-muted">
+                {{ content.about_summary }}
+            </p>
+        </div>
+
+        <div class="grid gap-6 lg:grid-cols-2">
+            <article class="space-y-4" data-reveal>
+                <h3 class="font-display text-2xl font-semibold">My Focus</h3>
+                <div class="grid gap-4">
+                    {% for item in content.about.my_focus %}
+                    <div class="number-card">
+                        <p class="number-badge">{{ "%02d"|format(loop.index) }}</p>
+                        <div>
+                            <h4 class="font-semibold text-ink">{{ item.title }}</h4>
+                            <p class="mt-2 text-sm leading-relaxed text-ink-muted">{{ item.description }}</p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </article>
+
+            <article class="space-y-4" data-reveal>
+                <h3 class="font-display text-2xl font-semibold">How I Work</h3>
+                <div class="grid gap-4">
+                    {% for item in content.about.how_i_work %}
+                    <div class="number-card">
+                        <p class="number-badge">{{ "%02d"|format(loop.index) }}</p>
+                        <div>
+                            <h4 class="font-semibold text-ink">{{ item.title }}</h4>
+                            <p class="mt-2 text-sm leading-relaxed text-ink-muted">{{ item.description }}</p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </article>
+        </div>
+
+        <div class="grid gap-6 lg:grid-cols-2">
+            <article class="panel" data-reveal>
+                <h3 class="font-display text-2xl font-semibold">Experience Snapshot</h3>
+                <div class="mt-5 space-y-6">
+                    {% for role in content.work_experience %}
+                    <div class="space-y-3 border-l-2 border-ink/10 pl-4">
+                        <h4 class="font-semibold text-ink">{{ role.title }}</h4>
+                        <p class="text-sm text-ink-muted">{{ role.organization }} | {{ role.period }}</p>
+                        <ul class="space-y-2 text-sm leading-relaxed text-ink-muted">
+                            {% for bullet in role.bullets %}
+                            <li class="list-disc ml-5">{{ bullet }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    {% endfor %}
+                </div>
+            </article>
+
+            <article class="panel space-y-8" data-reveal>
+                <div>
+                    <h3 class="font-display text-2xl font-semibold">Education</h3>
+                    <ul class="mt-4 space-y-3 text-sm leading-relaxed text-ink-muted">
+                        {% for item in content.education %}
+                        <li>
+                            <p class="font-semibold text-ink">{{ item.program }}</p>
+                            <p>{{ item.institution }} | {{ item.period }}</p>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-display text-2xl font-semibold">Leadership & Volunteering</h3>
+                    <ul class="mt-4 space-y-2 text-sm leading-relaxed text-ink-muted">
+                        {% for item in content.leadership %}
+                        <li class="list-disc ml-5">{{ item }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+
+                <div class="grid gap-6 md:grid-cols-2">
+                    <div>
+                        <h4 class="font-semibold text-ink">Skills</h4>
+                        <ul class="mt-2 space-y-2 text-sm text-ink-muted">
+                            {% for item in content.skills %}
+                            <li>{{ item }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-ink">Languages</h4>
+                        <ul class="mt-2 space-y-2 text-sm text-ink-muted">
+                            {% for item in content.languages %}
+                            <li>{{ item }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section id="work" class="section-space border-t border-ink/10">
+    <div class="container-shell space-y-8">
+        <div class="max-w-3xl" data-reveal>
+            <p class="kicker">Selected Work</p>
+            <h2 class="section-title">Operational projects across visa and consular administration.</h2>
+        </div>
+        <div class="grid gap-4 sm:grid-cols-2">
+            {% for item in content.selected_work %}
+            <article class="panel group transition duration-300 hover:-translate-y-1 hover:shadow-xl" data-reveal>
+                <p class="number-badge">{{ "%02d"|format(loop.index) }}</p>
+                <h3 class="mt-4 font-display text-2xl font-semibold leading-tight">{{ item.title }}</h3>
+                <p class="mt-2 text-sm font-semibold uppercase tracking-wider text-ink-muted">{{ item.category }} | {{ item.year }}</p>
+                <p class="mt-4 text-sm leading-relaxed text-ink-muted">{{ item.summary }}</p>
+                <a
+                    href="/work/{{ item.slug }}"
+                    class="mt-6 inline-flex items-center text-sm font-semibold text-brand transition group-hover:translate-x-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand"
+                >
+                    View details
+                </a>
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section id="services" class="section-space border-t border-ink/10">
+    <div class="container-shell space-y-8">
+        <div class="max-w-3xl" data-reveal>
+            <p class="kicker">Services</p>
+            <h2 class="section-title">Support for migration, mobility, and consular process excellence.</h2>
+        </div>
+        <div class="grid gap-4 md:grid-cols-2">
+            {% for service in content.services %}
+            <article class="number-card" data-reveal>
+                <p class="number-badge">{{ "%02d"|format(loop.index) }}</p>
+                <div>
+                    <h3 class="font-semibold text-ink">{{ service.title }}</h3>
+                    <p class="mt-2 text-sm leading-relaxed text-ink-muted">{{ service.description }}</p>
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section id="affiliations" class="section-space border-t border-ink/10">
+    <div class="container-shell space-y-8">
+        <div class="max-w-3xl" data-reveal>
+            <p class="kicker">Affiliations & Networks</p>
+            <h2 class="section-title">Collaborative communities that shape public-service impact.</h2>
+        </div>
+        <div class="grid gap-4 sm:grid-cols-2">
+            {% for item in content.affiliations %}
+            <article class="panel" data-reveal>
+                <h3 class="font-semibold text-ink">{{ item.name }}</h3>
+                <p class="mt-2 text-sm font-semibold uppercase tracking-wider text-ink-muted">{{ item.role }}</p>
+                <p class="mt-3 text-sm leading-relaxed text-ink-muted">{{ item.description }}</p>
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section id="photography" class="section-space border-t border-ink/10">
+    <div class="container-shell space-y-8">
+        <div class="max-w-3xl" data-reveal>
+            <p class="kicker">Photography</p>
+            <h2 class="section-title">A visual journal focused on movement, detail, and everyday diplomacy.</h2>
+            <p class="mt-4 text-sm leading-relaxed text-ink-muted">{{ content.photography.intro }}</p>
+        </div>
+
+        <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {% for photo in content.photography.gallery %}
+            <button
+                type="button"
+                class="group relative overflow-hidden rounded-2xl border border-ink/10 bg-white text-left shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand"
+                data-reveal
+                data-lightbox-trigger
+                data-lightbox-src="{{ photo.src }}"
+                data-lightbox-alt="{{ photo.alt }}"
+            >
+                <img src="{{ photo.src }}" alt="{{ photo.alt }}" loading="lazy" class="h-56 w-full object-cover transition duration-500 group-hover:scale-105">
+                <span class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent px-3 py-4 text-sm font-medium text-white">
+                    {{ photo.caption }}
+                </span>
+            </button>
+            {% endfor %}
+        </div>
+
+        {% if instagram_feed.source in ["graph", "embed", "manual"] %}
+        <div class="space-y-5" data-reveal>
+            <h3 class="font-display text-2xl font-semibold">Latest from Instagram</h3>
+
+            {% if instagram_feed.source == "graph" and instagram_feed.items %}
+            <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+                {% for post in instagram_feed.items %}
+                <a
+                    href="{{ post.permalink }}"
+                    target="_blank"
+                    rel="noreferrer"
+                    class="group overflow-hidden rounded-2xl border border-ink/10 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl"
+                >
+                    <img src="{{ post.media_url }}" alt="{{ post.caption }}" loading="lazy" class="h-48 w-full object-cover transition duration-500 group-hover:scale-105">
+                    <p class="p-3 text-xs leading-relaxed text-ink-muted">{{ post.caption }}</p>
+                </a>
+                {% endfor %}
+            </div>
+            {% elif instagram_feed.source == "embed" and instagram_feed.embeds %}
+            <div class="grid gap-4 lg:grid-cols-2">
+                {% for embed in instagram_feed.embeds %}
+                <article class="panel">
+                    <h4 class="mb-3 text-sm font-semibold text-ink">{{ embed.title }}</h4>
+                    <div class="text-sm text-ink-muted">{{ embed.html | safe }}</div>
+                </article>
+                {% endfor %}
+            </div>
+            <script async src="https://www.instagram.com/embed.js"></script>
+            {% else %}
+            <p class="text-sm text-ink-muted">
+                Instagram Graph API is not configured. Add official embed snippets in <code>content/content.yaml</code> or set <code>INSTAGRAM_ACCESS_TOKEN</code> in <code>.env</code> to enable this row.
+            </p>
+            {% endif %}
+        </div>
+        {% endif %}
+    </div>
+</section>
+
+<section id="contact" class="section-space border-t border-ink/10">
+    <div class="container-shell grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
+        <article class="space-y-5" data-reveal>
+            <p class="kicker">Contact</p>
+            <h2 class="section-title">Open to collaboration on migration and consular administration projects.</h2>
+            <div class="space-y-3 text-sm text-ink-muted">
+                <p>
+                    Email:
+                    <a href="mailto:{{ content.contact.email }}" class="link-inline text-ink">{{ content.contact.email }}</a>
+                </p>
+                <p>
+                    LinkedIn:
+                    <a href="{{ content.contact.linkedin }}" target="_blank" rel="noreferrer" class="link-inline text-ink">Profile</a>
+                </p>
+                {% if content.site.show_phone and content.contact.phone %}
+                <p>Phone: {{ content.contact.phone }}</p>
+                {% endif %}
+                <p>Location: {{ content.site.location }}</p>
+            </div>
+        </article>
+
+        <article class="panel" data-reveal>
+            <h3 class="font-display text-2xl font-semibold">Send a message</h3>
+
+            <div id="contact-feedback" class="mt-4" aria-live="polite">
+                {% if contact_feedback %}
+                {% with feedback=contact_feedback %}
+                {% include "partials/contact_result.html" %}
+                {% endwith %}
+                {% endif %}
+            </div>
+
+            <form
+                class="mt-5 space-y-4"
+                method="post"
+                action="/contact"
+                hx-post="/contact"
+                hx-target="#contact-feedback"
+                hx-swap="innerHTML"
+                hx-on::after-request="if (event.detail.successful) this.reset()"
+            >
+                <div class="space-y-2">
+                    <label for="name" class="text-sm font-semibold text-ink">Name</label>
+                    <input id="name" name="name" type="text" required class="field" autocomplete="name">
+                </div>
+                <div class="space-y-2">
+                    <label for="email" class="text-sm font-semibold text-ink">Email</label>
+                    <input id="email" name="email" type="email" required class="field" autocomplete="email">
+                </div>
+                <div class="space-y-2">
+                    <label for="subject" class="text-sm font-semibold text-ink">Subject (optional)</label>
+                    <input id="subject" name="subject" type="text" class="field">
+                </div>
+                <div class="space-y-2">
+                    <label for="message" class="text-sm font-semibold text-ink">Message</label>
+                    <textarea id="message" name="message" required rows="5" class="field"></textarea>
+                </div>
+                <button type="submit" class="btn-primary w-full sm:w-auto">Submit</button>
+            </form>
+            <p class="mt-3 text-xs text-ink-muted">Local dev mode: submissions are logged to <code>data/messages.jsonl</code>.</p>
+        </article>
+    </div>
+</section>
+
+<div
+    class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/80 p-4"
+    data-lightbox
+    role="dialog"
+    aria-modal="true"
+    aria-label="Photo viewer"
+>
+    <button
+        type="button"
+        class="absolute right-5 top-5 rounded-full border border-white/30 bg-white/10 px-3 py-2 text-sm font-semibold text-white transition hover:bg-white/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
+        data-lightbox-close
+    >
+        Close
+    </button>
+    <figure class="max-w-5xl">
+        <img data-lightbox-image src="" alt="" class="max-h-[78vh] rounded-2xl object-contain shadow-2xl">
+        <figcaption data-lightbox-caption class="mt-3 text-center text-sm text-white/90"></figcaption>
+    </figure>
+</div>
+{% endblock %}

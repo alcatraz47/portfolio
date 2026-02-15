@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Case Tracking</title>
+  <desc id="desc">Abstract timeline board for consular case tracking.</desc>
+  <rect width="1200" height="900" fill="#eef3fb"/>
+  <rect x="110" y="120" width="980" height="660" rx="32" fill="#ffffff"/>
+  <line x1="200" y1="250" x2="1000" y2="250" stroke="#0f305f" stroke-width="8"/>
+  <line x1="200" y1="450" x2="1000" y2="450" stroke="#0f305f" stroke-width="8"/>
+  <line x1="200" y1="650" x2="1000" y2="650" stroke="#0f305f" stroke-width="8"/>
+  <circle cx="280" cy="250" r="28" fill="#0b43a6"/>
+  <circle cx="560" cy="450" r="28" fill="#2b6dd8"/>
+  <circle cx="840" cy="650" r="28" fill="#94b8ee"/>
+  <text x="230" y="205" font-size="34" font-family="Sora, Arial" fill="#162745">Intake</text>
+  <text x="510" y="405" font-size="34" font-family="Sora, Arial" fill="#162745">Interview</text>
+  <text x="790" y="605" font-size="34" font-family="Sora, Arial" fill="#162745">Closure</text>
+</svg>

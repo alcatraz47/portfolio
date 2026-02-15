@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Secure Archives</title>
+  <desc id="desc">Abstract archival labels and shelves showing secure records management.</desc>
+  <rect width="1200" height="900" fill="#f4efe6"/>
+  <rect x="100" y="130" width="1000" height="640" rx="28" fill="#fff"/>
+  <rect x="170" y="210" width="860" height="120" rx="16" fill="#e6edf8"/>
+  <rect x="170" y="390" width="860" height="120" rx="16" fill="#d8e4f7"/>
+  <rect x="170" y="570" width="860" height="120" rx="16" fill="#cadbf5"/>
+  <rect x="220" y="245" width="180" height="50" rx="8" fill="#0b43a6"/>
+  <rect x="220" y="425" width="180" height="50" rx="8" fill="#0b43a6"/>
+  <rect x="220" y="605" width="180" height="50" rx="8" fill="#0b43a6"/>
+  <text x="250" y="280" font-size="30" font-family="Sora, Arial" fill="#fff">A1</text>
+  <text x="250" y="460" font-size="30" font-family="Sora, Arial" fill="#fff">B4</text>
+  <text x="250" y="640" font-size="30" font-family="Sora, Arial" fill="#fff">C9</text>
+</svg>
