@@ -192,7 +192,7 @@ photography:
       caption: Stakeholder Communication
 
 instagram:
-  latest_enabled: true
+  latest_enabled: false
   max_items: 4
   embeds:
     - title: Official Embed Example 1

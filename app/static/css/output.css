@@ -1091,6 +1091,10 @@ a {
   color: rgb(var(--ink));
 }
 
+.pointer-events-none {
+  pointer-events: none;
+}
+
 .fixed {
   position: fixed;
 }
@@ -1109,6 +1113,11 @@ a {
 
 .inset-0 {
   inset: 0px;
+}
+
+.inset-x-0 {
+  left: 0px;
+  right: 0px;
 }
 
 .bottom-0 {
@@ -1199,6 +1208,10 @@ a {
   height: 14rem;
 }
 
+.h-44 {
+  height: 11rem;
+}
+
 .max-h-\[78vh\] {
   max-height: 78vh;
 }
@@ -1235,6 +1248,10 @@ a {
 
 .list-disc {
   list-style-type: disc;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -1708,6 +1725,10 @@ a {
 }
 
 @media (min-width: 640px) {
+  .sm\:h-52 {
+    height: 13rem;
+  }
+
   .sm\:w-auto {
     width: auto;
   }
@@ -1728,8 +1749,24 @@ a {
 }
 
 @media (min-width: 768px) {
+  .md\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
+  .md\:h-56 {
+    height: 14rem;
+  }
+
+  .md\:h-80 {
+    height: 20rem;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:flex-row {
@@ -1752,6 +1789,14 @@ a {
 
   .lg\:hidden {
     display: none;
+  }
+
+  .lg\:h-60 {
+    height: 15rem;
+  }
+
+  .lg\:h-96 {
+    height: 24rem;
   }
 
   .lg\:grid-cols-2 {
